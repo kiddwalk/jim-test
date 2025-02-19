@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站 & AI对话</title>
+    <!-- 引入 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/github.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">秋爹2025</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#" data-page="home">个人主页</a>
+                <a class="nav-link" href="#" data-page="chat">AI对话</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 个人主页部分 -->
+        <section id="home" class="page active">
+            <div class="container">
+                <!-- 照片轮播 -->
+                <div class="carousel">
+                    <img src="images/1.png" alt="我的照片1" class="active">
+                    <img src="images/2.png" alt="我的照片2">
+                    <img src="images/3.png" alt="我的照片3">
+                </div>
+                
+                <!-- 个人简介 -->
+                <div class="profile">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <img src="images/微信图片_20250210171426.jpg" alt="个人头像">
+                        </div>
+                        <div class="profile-info">
+                            <h2>关于我</h2>
+                            <p>这里是您的个人简介内容...</p>
+                            <div class="chat-container">
+                                <div class="chat-history" id="chatHistory">
+                                    <!-- 对话内容将在这里动态生成 -->
+                                </div>
+                                <div class="chat-input-container">
+                                    <textarea id="chatInput" placeholder="输入您的消息..." rows="1"></textarea>
+                                    <button id="sendButton" class="send-button">发送</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 社交媒体链接 -->
+                <div class="social-links">
+                    <a href="https://www.aidu.com" class="social-link" target="_blank">创客贴</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 秋爹2025. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 引入 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/lib/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
